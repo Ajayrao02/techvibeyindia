@@ -12,8 +12,8 @@ This website is built as part of my personal project to learn:
 
 ---
 
-## 🚀 Live Website  
-👉 **https://amazontechvibeyindiagadget.netlify.app/**
+## 🌐 Live Website  
+👉 **https://techvibeyindiagadgets.netlify.app/** 
 
 ---
 
