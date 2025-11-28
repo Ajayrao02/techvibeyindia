@@ -22,15 +22,12 @@
         .logo {
             font-size: 28px;
             font-weight: bold;
-            letter-spacing: 1px;
-            margin-bottom: 20px;
             color: #00eaff;
             text-shadow: 0 0 12px #00eaff;
         }
 
         .hero h1 {
-            font-size: 32px;
-            font-weight: 700;
+            font-size: 34px;
             color: #d2eaff;
             text-shadow: 0 0 12px #009dff;
         }
@@ -41,6 +38,7 @@
             color: #9bbcd1;
         }
 
+        /* BUTTON CONTAINER */
         .btn-container {
             margin-top: 30px;
             display: flex;
@@ -52,25 +50,35 @@
             margin-right: auto;
         }
 
+        /* BUTTON STYLE + ANIMATIONS */
         .btn {
             padding: 15px;
             font-size: 18px;
             font-weight: 500;
             background: #001d3d;
             border: 2px solid #00eaff;
-            border-radius: 10px;
+            border-radius: 12px;
             color: #00eaff;
             text-decoration: none;
             display: block;
-            box-shadow: 0 0 10px #00eaff;
-            transition: 0.2s;
+            box-shadow: 0 0 15px #009dff80;
+            transition: 0.25s;
+            animation: float 3s ease-in-out infinite;
         }
 
+        /* Hover animation */
         .btn:hover {
             background: #00eaff;
             color: #001d3d;
-            transform: scale(1.03);
-            box-shadow: 0 0 20px #00eaff;
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: 0 0 25px #00eaff;
+        }
+
+        /* Floating animation */
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-6px); }
+            100% { transform: translateY(0); }
         }
 
         .footer {
@@ -79,6 +87,28 @@
             font-size: 14px;
             color: #5f8ca1;
         }
+
+        .insta-link {
+            color: #00eaff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .insta-link:hover {
+            text-decoration: underline;
+        }
+
+        /* About Page Link */
+        .nav-link {
+            margin-top: 20px;
+            display: inline-block;
+            font-size: 16px;
+            color: #00eaff;
+            text-decoration: none;
+        }
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+
     </style>
 </head>
 
@@ -88,38 +118,32 @@
         <div class="logo">✨ TechVibey India</div>
         <h1>Discover Premium Tech Deals</h1>
         <p>Your ultimate hub for Amazon tech, mobile accessories & trending gadgets.</p>
+
+        <a class="nav-link" href="about.html">📄 About / Contact</a>
     </div>
 
     <div class="btn-container">
 
-        <!-- Amazon Top Deals -->
-        <a class="btn" href="https://www.amazon.in/deals?tag=techvibeyindi-21" target="_blank">
-            🔥 Amazon Top Deals
-        </a>
+        <a class="btn" href="https://www.amazon.in/deals?tag=techvibeyindi-21">🔥 Amazon Top Deals</a>
+        <a class="btn" href="https://www.amazon.in/s?k=mobile+accessories&tag=techvibeyindi-21">📱 Mobile Accessories</a>
+        <a class="btn" href="https://www.amazon.in/s?k=earbuds&tag=techvibeyindi-21">🎧 Headphones & Earbuds</a>
+        <a class="btn" href="https://www.amazon.in/s?k=laptop+gadgets&tag=techvibeyindi-21">💻 Laptop Gadgets</a>
+        <a class="btn" href="https://www.amazon.in/deal?tag=techvibeyindi-21">⚡ Lightning Deals</a>
 
-        <!-- Mobile Accessories -->
-        <a class="btn" href="https://www.amazon.in/s?k=mobile+accessories&tag=techvibeyindi-21" target="_blank">
-            📱 Best Mobile Accessories
-        </a>
+        <!-- NEW CATEGORIES -->
+        <a class="btn" href="https://www.amazon.in/s?k=smartwatch&tag=techvibeyindi-21">⌚ Smartwatches</a>
+        <a class="btn" href="https://www.amazon.in/s?k=powerbank&tag=techvibeyindi-21">🔋 Powerbanks</a>
+        <a class="btn" href="https://www.amazon.in/s?k=bluetooth+speaker&tag=techvibeyindi-21">🔊 Bluetooth Speakers</a>
+        <a class="btn" href="https://www.amazon.in/s?k=computer+accessories&tag=techvibeyindi-21">🖥️ Computer Accessories</a>
+        <a class="btn" href="https://www.amazon.in/s?k=gaming+accessories&tag=techvibeyindi-21">🎮 Gaming Accessories</a>
+        <a class="btn" href="https://www.amazon.in/s?k=phone+case&tag=techvibeyindi-21">📘 Phone Cases</a>
 
-        <!-- Headphones & Earbuds -->
-        <a class="btn" href="https://www.amazon.in/s?k=earbuds&tag=techvibeyindi-21" target="_blank">
-            🎧 Headphones & Earbuds
-        </a>
-
-        <!-- Laptop Gadgets -->
-        <a class="btn" href="https://www.amazon.in/s?k=laptop+gadgets&tag=techvibeyindi-21" target="_blank">
-            💻 Laptop Gadgets
-        </a>
-
-        <!-- Lightning Deals -->
-        <a class="btn" href="https://www.amazon.in/deal?tag=techvibeyindi-21" target="_blank">
-            ⚡ Today's Lightning Deals
-        </a>
     </div>
 
     <div class="footer">
-        © 2025 TechVibey India <br><br>
+        © 2025 TechVibey India <br>
+        <a class="insta-link" href="https://instagram.com/techvibey.india">📸 @techvibey.india</a>
+        <br><br>
         <small>As an Amazon Associate, I earn from qualifying purchases.</small>
     </div>
 
